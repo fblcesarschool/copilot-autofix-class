@@ -10,7 +10,7 @@ def get_user_by_email(email):
     cursor = conn.cursor()
     
     # Entrada do usuário sem sanitização
-    query = "SELECT * FROM users WHERE email = '" + email + "'"
+    query = "SELECT * FROM users WHERE email = '" + email + "'" 
     
     cursor.execute(query)
     result = cursor.fetchone()
